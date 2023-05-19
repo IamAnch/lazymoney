@@ -1,9 +1,9 @@
-# Money4Band 
+# lazymoney 
 <img src="./.resources/.assets/M4B_logo_small.png?raw=true" width="96"> - **Leave a star ⭐ if you like this project 🙂 thank you.**
 
 **|Easy automatic multi app passive income project with Webdasboard, Auto Updater and Proxy Support:dollar::satisfied::+1:|**
 ## :information_source: Info
-**Money4Band Leverages unused internet bandwidth allowing you to make money with something you have and would otherwise be wasted.** It use containerized version of apps like EarnApp, Honeygain, IPRoyal Pawns, PacketStream, Peer2Profit, Repocket, Proxyrack, Proxylite, Bitping and so on but it's also safer than installing and using these native apps on your host system. More info and FAQ in the [Wiki](https://github.com/MRColorR/money4band/wiki).
+**lazymoney Leverages unused internet bandwidth allowing you to make money with something you have and would otherwise be wasted.** It use containerized version of apps like EarnApp, Honeygain, IPRoyal Pawns, PacketStream, Peer2Profit, Repocket, Proxyrack, Proxylite, Bitping and so on but it's also safer than installing and using these native apps on your host system. More info and FAQ in the [Wiki](https://github.com/IamAnch/lazymoney/wiki).
 
 - This is a multiplatform, self updating, lightweight docker stack that runs many passive income applications that pay you in USD or in crypto to share your unused internet bandwidth. This docker stack makes it easier to set up and use those apps and it also includes an auto updater, multiproxy support, notification system and web dashboard.
 
@@ -23,15 +23,15 @@ This Docker Stack should work on anything that may have docker installed. In par
 - Virtualization functions in the BIOS must be active to use Docker.
 - Docker should already be installed and able to run on startup. If it is not already installed follow the instructions for your platform at https://docs.docker.com/get-docker/ or use the guided setup script function to install it.
 - (Optional) on Windows, Virtualization platform and Windows Subsystem for Linux should be active as this functions are required by Docker. If they're not already enabled, please enable them or use the guided setup script function to turn them on and install Docker.
-- (Optional) On arm devices (such as Raspberry) to support non-arm native docker images it is strongly recommended to install an emulation layer and set it as a service to start automatically: The automatic guided setup will try to install it for you or you can do it manually following the steps explained in the [Wiki](https://github.com/MRColorR/money4band/wiki) prerequisites page.
+- (Optional) On arm devices (such as Raspberry) to support non-arm native docker images it is strongly recommended to install an emulation layer and set it as a service to start automatically: The automatic guided setup will try to install it for you or you can do it manually following the steps explained in the [Wiki](https://github.com/IamAnch/lazymoney/wiki) prerequisites page.
 ## :arrow_forward: How to run (guided setup)
 ### 1) :link: Get the latest version 
 Using your preferred method get the latest version of this project and unzip it.
-- Option 1) (Preferred fo any OS) go to the [Releases](https://github.com/MRColorR/money4band/releases) to download the latest version.
+- Option 1) (Preferred fo any OS) go to the [Releases](https://github.com/IamAnch/lazymoney/releases) to download the latest version.
 - Option 2) (Linux/MacOS) use a bash command like: 
-  - ```wget https://github.com/MRColorR/money4band/archive/refs/heads/main.zip && unzip main.zip```
+  - ```wget https://github.com/IamAnch/lazymoney/archive/refs/heads/main.zip && unzip main.zip```
 - Option 3) (Windows) use a pwsh command like: 
-  - ```Invoke-WebRequest -Uri https://github.com/MRColorR/money4band/archive/refs/heads/main.zip -OutFile main.zip; Expand-Archive -Path main.zip -DestinationPath .\```
+  - ```Invoke-WebRequest -Uri https://github.com/IamAnch/lazymoney/archive/refs/heads/main.zip -OutFile main.zip; Expand-Archive -Path main.zip -DestinationPath .\```
 
 
 ### 2) :memo: Register an account on the app's sites clicking each apps' names in the following compatibility matrix
@@ -42,16 +42,16 @@ Using your preferred method get the latest version of this project and unzip it.
 
 | App Name & Link | Residential/Home/Mobile IP or equivalent Proxy's IP | VPS/Datacenter/Hosting/Cloud IP or equivalent Proxy's IP | Max devices per Account | Max Devices per IP | 
 |  :--- |  :---: |  :---: | :---: | :---: |
-| Go to [Earnapp](https://earnapp.com/i/3zulx7k)  | :white_check_mark:	  | :x: | 15|1|
-| Go to [HoneyGain](https://r.honeygain.me/MINDL15721) | :white_check_mark:	  | :x: |10|1|
-| Go to [IPROYAL](https://pawns.app?r=MiNe)  | :white_check_mark:	  | :x: |Unlimited|1|
-| Go to [PEER2PROFIT](https://p2pr.me/165849012262da8d0aa13c8)  | :white_check_mark:	  | :white_check_mark:	 | Unlimited|Unlimited|
-| Go to [PACKETSTREAM](https://packetstream.io/?psr=3zSD)  | :white_check_mark:	  | :x: |Unlimited|1|
-| Go to [TRAFFMONETIZER](https://traffmonetizer.com/?aff=366499) | :white_check_mark:	  | :white_check_mark: |Unlimited|Unlimited|
-| Go to [REPOCKET](https://link.repocket.co/hr8i)  | :white_check_mark:	  | :white_check_mark: |Unlimited|2|
-| Go to [PROXYRACK](https://peer.proxyrack.com/ref/myoas6qttvhuvkzh8ffx90ns1ouhwgilfgamo5ex)  | :white_check_mark:	  | :white_check_mark: |500|1|
-| Go to [PROXYLITE](https://proxylite.ru/?r=PJTKXWN3) | :white_check_mark:	  | :white_check_mark: |Unlimited|1|
-| Go to [BITPING](https://app.bitping.com?r=qm7mIuX3) | :white_check_mark:	  | :white_check_mark: |Unlimited|1|
+| Go to [Earnapp](https://earnapp.com/i/FfCKF1E9)  | :white_check_mark:	  | :x: | 15|1|
+| Go to [HoneyGain](https://r.honeygain.me/MASHM6BB40) | :white_check_mark:	  | :x: |10|1|
+| Go to [IPROYAL](https://pawns.app/?r=1599148)  | :white_check_mark:	  | :x: |Unlimited|1|
+| Go to [PEER2PROFIT](https://p2pr.me/168448346564672d89c2b6a)  | :white_check_mark:	  | :white_check_mark:	 | Unlimited|Unlimited|
+| Go to [PACKETSTREAM](https://packetstream.io/?psr=5Lag)  | :white_check_mark:	  | :x: |Unlimited|1|
+| Go to [TRAFFMONETIZER](https://traffmonetizer.com/?aff=1278488) | :white_check_mark:	  | :white_check_mark: |Unlimited|Unlimited|
+| Go to [REPOCKET](https://link.repocket.co/5NeJ)  | :white_check_mark:	  | :white_check_mark: |Unlimited|2|
+| Go to [PROXYRACK](https://peer.proxyrack.com/ref/c8gi2xj3o5y0i82bjp4tpnnrquqwdni1dlvvslxz)  | :white_check_mark:	  | :white_check_mark: |500|1|
+| Go to [PROXYLITE](https://proxylite.ru/?r=LUTHFNXF) | :white_check_mark:	  | :white_check_mark: |Unlimited|1|
+| Go to [BITPING](https://app.bitping.com?r=d4YIgA9q) | :white_check_mark:	  | :white_check_mark: |Unlimited|1|
 
 ### 3):technologist: Complete the automatic guided setup using runme.sh or runme.ps1
 * (On linux) open a terminal in the project folder or navigate to it then use the following commands to add execute permission and run the guided script to configure the .env file and then start the stack:
@@ -80,13 +80,13 @@ Using your preferred method get the latest version of this project and unzip it.
 
 ## :grey_question: Wiki (F.A.Q., Alternatve Manual Setup, How To Update,...)
 
-* Go to the [Wiki](https://github.com/MRColorR/money4band/wiki) to find F.A.Q., Alternatve Manual Setup, How To Update, other useful guides and more details.
+* Go to the [Wiki](https://github.com/IamAnch/lazymoney/wiki) to find F.A.Q., Alternatve Manual Setup, How To Update, other useful guides and more details.
 
 
 
 ## :interrobang: Need help or Found an issue/bug ? 
-- For Info, Help and new features requesto use the [Discussion tab](https://github.com/MRColorR/money4band/discussions)
-- For issues and bug report use the [Issue tab](https://github.com/MRColorR/money4band/issues)
+- For Info, Help and new features requesto use the [Discussion tab](https://github.com/IamAnch/lazymoney/discussions)
+- For issues and bug report use the [Issue tab](https://github.com/IamAnch/lazymoney/issues)
 
 ---
 

@@ -2,45 +2,45 @@
 set-executionpolicy -scope CurrentUser -executionPolicy Bypass -Force
 
 ### Links ##
-$EARNAPP_LNK = "EARNAPP | https://earnapp.com/i/3zulx7k"
+$EARNAPP_LNK = "EARNAPP | https://earnapp.com/i/FfCKF1E9"
 $EARNAPP_IMG='fazalfarhan01/earnapp'
 
-$HONEYGAIN_LNK = "HONEYGAIN | https://r.honeygain.me/MINDL15721"
+$HONEYGAIN_LNK = "HONEYGAIN | https://r.honeygain.me/MASHM6BB40"
 $HONEYGAIN_IMG='honeygain/honeygain'
 
-$IPROYALPAWNS_LNK = "IPROYALPAWNS | https://pawns.app?r=MiNe"
+$IPROYALPAWNS_LNK = "IPROYALPAWNS | https://pawns.app/?r=1599148"
 $IPROYALPAWNS_IMG='iproyal/pawns-cli'
 
-$PACKETSTREAM_LNK = "PACKETSTREAM | https://packetstream.io/?psr=3zSD"
+$PACKETSTREAM_LNK = "PACKETSTREAM | https://packetstream.io/?psr=5Lag"
 $PACKETSTREAM_IMG='packetstream/psclient'
 
-$PEER2PROFIT_LNK = "PEER2PROFIT | https://p2pr.me/165849012262da8d0aa13c8"
+$PEER2PROFIT_LNK = "PEER2PROFIT | https://p2pr.me/168448346564672d89c2b6a"
 $PEER2PROFIT_IMG='peer2profit/peer2profit_linux'
 
-$TRAFFMONETIZER_LNK = "TRAFFMONETIZER | https://traffmonetizer.com/?aff=366499"
+$TRAFFMONETIZER_LNK = "TRAFFMONETIZER | https://traffmonetizer.com/?aff=1278488"
 $TRAFFMONETIZER_IMG='traffmonetizer/cli'
 
-$REPOCKET_LNK = "REPOCKET | https://link.repocket.co/hr8i"
+$REPOCKET_LNK = "REPOCKET | https://link.repocket.co/5NeJ"
 $REPOCKET_IMG='repocket/repocket'
 
-$PROXYRACK_LNK= "PROXYRACK | https://peer.proxyrack.com/ref/myoas6qttvhuvkzh8ffx90ns1ouhwgilfgamo5ex"
+$PROXYRACK_LNK= "PROXYRACK | https://peer.proxyrack.com/ref/c8gi2xj3o5y0i82bjp4tpnnrquqwdni1dlvvslxz"
 $PROXYRACK_IMG='proxyrack/pop'
 
-$BITPING_LNK = "BITPING | https://app.bitping.com?r=qm7mIuX3"
+$BITPING_LNK = "BITPING | https://app.bitping.com?r=d4YIgA9q"
 $BITPING_IMG='bitping/bitping-node'
 
 ### .env File Prototype Link##
-$ENV_SRC = 'https://github.com/MRColorR/money4band/raw/main/.env'
+$ENV_SRC = 'https://github.com/IamAnch/lazymoney/raw/main/.env'
 
 ### docker compose.yaml Prototype Link##
 $DKCOM_FILENAME = "docker-compose.yaml"
-$DKCOM_SRC = "https://github.com/MRColorR/money4band/raw/main/$DKCOM_FILENAME"
+$DKCOM_SRC = "https://github.com/IamAnch/lazymoney/raw/main/$DKCOM_FILENAME"
 
 ### Docker installer script for Windows source link ##
-$DKINST_WIN_SRC = 'https://github.com/MRColorR/money4band/raw/main/.resources/.scripts/install-docker-win.ps1'
+$DKINST_WIN_SRC = 'https://github.com/IamAnch/lazymoney/raw/main/.resources/.scripts/install-docker-win.ps1'
 
 ### Docker installer script for Mac source link ##
-$DKINST_MAC_SRC = 'https://github.com/MRColorR/money4band/raw/main/.resources/.scripts/install-docker-mac.ps1'
+$DKINST_MAC_SRC = 'https://github.com/IamAnch/lazymoney/raw/main/.resources/.scripts/install-docker-mac.ps1'
 
 
 ### Resources, Scripts and Files folders
@@ -294,7 +294,7 @@ function fn_setupProxy() {
             fn_setupProxy
         }
         # An unique name for the stack is chosen so that even if multiple stacks are started with different proxies the names do not conflict
-            (Get-Content .\.env).replace("COMPOSE_PROJECT_NAME=money4band", "COMPOSE_PROJECT_NAME=money4band_$(Get-Random)") | Set-Content .\.env
+            (Get-Content .\.env).replace("COMPOSE_PROJECT_NAME=lazymoney", "COMPOSE_PROJECT_NAME=lazymoney_$(Get-Random)") | Set-Content .\.env
     }
     elseif ($yn -eq 'N' -or $yn -eq 'n' -or $yn -eq 'No' -or $yn -eq 'no') {
         Write-Output "Ok, no proxy added to configuration."
@@ -491,7 +491,7 @@ function fn_resetDockerCompose {
 ### Main Menu ##
 function mainmenu {
     Clear-Host
-    Write-Output "MONEY4BAND AUTOMATIC GUIDED SETUP"
+    Write-Output "lazymoney AUTOMATIC GUIDED SETUP"
     Write-Output "--------------------------------- "
     ## architecture detection
     $script:ARCH = $env:PROCESSOR_ARCHITECTURE.ToLower()

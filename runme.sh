@@ -9,11 +9,11 @@ colorprint() { printf "${colors[$1]}%s${DEFAULT}\n" "$2"; }
 errorprint() { printf "%s\n" "$1" >&2; }
 
 ### .env File Prototype Link ###
-readonly ENV_SRC='https://github.com/MRColorR/money4band/raw/main/.env'
+readonly ENV_SRC='https://github.com/IamAnch/lazymoney/raw/main/.env'
 
 ### docker compose.yaml Prototype Link ###
 readonly DKCOM_FILENAME="docker-compose.yaml"
-readonly DKCOM_SRC="https://github.com/MRColorR/money4band/raw/main/$DKCOM_FILENAME"
+readonly DKCOM_SRC="https://github.com/IamAnch/lazymoney/raw/main/$DKCOM_FILENAME"
 
 ### Resources, Scripts and Files folders ###
 readonly RESOURCES_DIR="$PWD/.resources"
@@ -433,7 +433,7 @@ fn_setupProxy() {
                     read -r -p "Press enter to continue"
                     PROXY_CONF='true'
                     # An unique name for the stack is chosen so that even if multiple stacks are started with different proxies the names do not conflict
-                    sed -i "s^COMPOSE_PROJECT_NAME=money4band^COMPOSE_PROJECT_NAME=money4band_$RANDOM_VALUE^" .env
+                    sed -i "s^COMPOSE_PROJECT_NAME=lazymoney^COMPOSE_PROJECT_NAME=lazymoney_$RANDOM_VALUE^" .env
                     sed -i "s^DEVICE_NAME=${DEVICE_NAME}^DEVICE_NAME=${DEVICE_NAME}$RANDOM_VALUE^" .env
                     # uncomment .env and compose file
                     sed -i "s^# STACK_PROXY=^STACK_PROXY=$STACK_PROXY^" .env
@@ -637,7 +637,7 @@ fn_resetDockerCompose(){
 ### Main Menu ##
 mainmenu() {
     clear
-    colorprint "GREEN" "MONEY4BAND AUTOMATIC GUIDED SETUP"$'\n'"--------------------------------- "
+    colorprint "GREEN" "lazymoney AUTOMATIC GUIDED SETUP"$'\n'"--------------------------------- "
     colorprint "YELLOW" "Checking dependencies..."
 
     # Check if jq is installed
@@ -651,7 +651,7 @@ mainmenu() {
     fi
 
     clear
-    colorprint "GREEN" "MONEY4BAND AUTOMATIC GUIDED SETUP"$'\n'"--------------------------------- "
+    colorprint "GREEN" "lazymoney AUTOMATIC GUIDED SETUP"$'\n'"--------------------------------- "
     
     # Detect OS architecture
     ARCH=$(uname -m)
